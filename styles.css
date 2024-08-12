@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: orangered;
+    transition: .5s;
+    position: relative;
+}
+
+li:hover::before {
+    content: "◉";
+    color: orangered;
+    position: absolute;
+    right: 110%;
+    bottom: 5%;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+    transition: .5s;
+    margin-top: 5px;
+}
+
+#logo:hover {
+    transform: scale(1.03);
+}
+
+#banner {
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/725/968/972/movies-artwork-blade-runner-2049-science-fiction-2017-year-hd-wallpaper-2a4ddf01f4a292411e642ac922b3fa26.jpg');
+    background-position: 50% 60%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    transition: 2s;
+}
+
+#banner:hover {
+    width: 100%;
+    height: 720px;
+}
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+i {
+    background-color: black;
+    color: orangered;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 20px;
+}
+ 
+#trailer-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    margin-top: 12px;
+}
+#trailer-container:hover {
+    transform: scale(1.06);
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    width: 110%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: orangered;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .9s;
+    font-size: 21px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: aliceblue;
+    color: orangered;
+    border-radius: 5px;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.cards-content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 95%;
+    height: 650px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: orangered;
+    font-size: 20px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    color: aliceblue;
+}
+
+.banner-1 {
+    background-image: url('https://wallpaper.forfun.com/fetch/a2/a2f6adbad0ca9c49bd48381cecf22569.jpeg');
+    background-position: 0 10%;
+}
+.banner-2 {
+    background-image: url('https://rare-gallery.com/uploads/posts/124449-harrison-ford-blade-runner-2049-rick-deckard-4k.jpg');
+}
+.banner-3 {
+    background-image: url('https://pp.userapi.com/c840236/v840236435/41781/SLEjad6GttE.jpg');
+    background-position: 25% 0;
+}
+
+footer {
+    height: 200px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 50%;
+    }
+    #trailer-container {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    #trailer-container:hover {
+        transform: scale(1);
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .trailer {
+        width: 100%;
+    }
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .description {
+        width: 95%;
+    }
+    .button {
+        width: 95%;
+        margin-top: 30px;
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}

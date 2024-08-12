@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: orangered;
+    transition: .5s;
+    position: relative;
+}
+
+li:hover::before {
+    content: "◉";
+    color: orangered;
+    position: absolute;
+    right: 110%;
+    bottom: 5%;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+    transition: .5s;
+    margin-top: 5px;
+}
+
+#logo:hover {
+    transform: scale(1.03);
+}
+
+#bannerc {
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/1/711/607/blade-runner-blade-runner-2049-ana-de-armas-movie-screenshots-women-hd-wallpaper-0ad31799d7d2288e1dc8c7aef8d34c94.jpg');
+    background-position: 50% 15%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    transition: 2s;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 50px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+#bannerc:hover {
+    width: 100%;
+    height: 720px;
+    color: aliceblue;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    position: relative;
+}
+
+i {
+    background-color: black;
+    color: orangered;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: .8s;
+    margin-bottom: 50px;
+}
+
+.container:hover {
+    transform: scale(1.2);
+}
+
+form {
+    width: 400px;
+    margin-top: 20px;
+    background-color: black;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#name {
+    width: 100%;
+    background-color: aliceblue;
+    border: 0;
+    outline: 0;
+    padding: 20px 20px;
+    color: slategrey;
+    border-radius: 5px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 15px;
+}
+
+
+#email {
+    width: 100%;
+    background-color: aliceblue;
+    border: 0;
+    outline: 0;
+    padding: 20px 20px;
+    color: slategrey;
+    border-radius: 5px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 15px;
+}
+
+#message {
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+    border: 0;
+    outline: 0;
+    padding: 20px 20px;
+    color: slategrey;
+    border-radius: 5px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 15px;
+}
+
+.buttonc {
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#submit {
+    background-color: aliceblue;
+    color: orangered;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 18px;
+    transition: .8s;
+    margin-top: 10px;
+}
+
+#submit:hover {
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+footer {
+    height: 200px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40%;
+    }
+    .container{
+       display: flex;
+       justify-content: space-between; 
+    }
+    .container:hover{
+        transform: scale(1);     
+    }
+}

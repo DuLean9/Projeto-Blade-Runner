@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: orangered;
+    transition: .5s;
+    position: relative;
+}
+
+li:hover::before {
+    content: "◉";
+    color: orangered;
+    position: absolute;
+    right: 110%;
+    bottom: 5%;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+    transition: .5s;
+    margin-top: 5px;
+}
+
+#logo:hover {
+    transform: scale(1.03);
+}
+
+#bannerco {
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/968/580/27/bladerunner-blade-runner-2049-cyberpunk-hd-wallpaper-0a23b7e9f732c83e1dd857bef873ec34.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    transition: 2s;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 50px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+#bannerco:hover {
+    width: 100%;
+    height: 720px;
+    color: aliceblue;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+i {
+    background-color: black;
+    color: orangered;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 20px;
+}
+
+.critic-section {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.critic {
+    width: 50%;
+    border: 2px solid black;
+    padding: 15px;
+    height: 50%;
+    transition: .5s;
+}
+
+.critic:hover {
+    transform: scale(1.06);
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid orangered;
+}
+
+.username {
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-size: 20px;
+}
+
+.critic-text {
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+footer {
+    height: 200px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40%;
+    }
+
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: orangered;
+    transition: .5s;
+    position: relative;
+}
+
+li:hover::before {
+    content: "◉";
+    color: orangered;
+    position: absolute;
+    right: 110%;
+    bottom: 5%;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+    transition: .5s;
+    margin-top: 5px;
+}
+
+#logo:hover {
+    transform: scale(1.03);
+}
+
+#bannerf {
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/157/665/100/blade-runner-2049-blade-runner-ryan-gosling-cyber-hd-wallpaper-0c30d0cc070c92b3c267817cd19a567b.jpg');
+    background-position: 50% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    transition: 2s;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 50px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+#bannerf:hover {
+    width: 100%;
+    height: 720px;
+    color: aliceblue;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    font-size: 20px;
+}
+
+i {
+    background-color: black;
+    color: orangered;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 25px;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    transition: .8s;
+}
+.gallery:hover {
+    transform: scale(1.07);
+}
+.image {
+    width: 500px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image:hover {
+    transform: scale(1.02);
+    border-radius: 8px;
+}
+
+footer {
+    height: 200px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40%;
+    }
+    .gallery:hover {
+        transform: scale(1);
+    }
+
+}
